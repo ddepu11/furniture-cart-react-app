@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/furniture-cart-react-app/static/css/main.1f94c00d.chunk.css",
+    "main.js": "/furniture-cart-react-app/static/js/main.c6694617.chunk.js",
+    "main.js.map": "/furniture-cart-react-app/static/js/main.c6694617.chunk.js.map",
+    "runtime-main.js": "/furniture-cart-react-app/static/js/runtime-main.f42e8ca3.js",
+    "runtime-main.js.map": "/furniture-cart-react-app/static/js/runtime-main.f42e8ca3.js.map",
+    "static/js/2.c2d926da.chunk.js": "/furniture-cart-react-app/static/js/2.c2d926da.chunk.js",
+    "static/js/2.c2d926da.chunk.js.map": "/furniture-cart-react-app/static/js/2.c2d926da.chunk.js.map",
+    "index.html": "/furniture-cart-react-app/index.html",
+    "static/css/main.1f94c00d.chunk.css.map": "/furniture-cart-react-app/static/css/main.1f94c00d.chunk.css.map",
+    "static/js/2.c2d926da.chunk.js.LICENSE.txt": "/furniture-cart-react-app/static/js/2.c2d926da.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f42e8ca3.js",
+    "static/js/2.c2d926da.chunk.js",
+    "static/css/main.1f94c00d.chunk.css",
+    "static/js/main.c6694617.chunk.js"
+  ]
+}
