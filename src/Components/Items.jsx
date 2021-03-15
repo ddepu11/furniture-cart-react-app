@@ -4,7 +4,7 @@ import { ImBin } from "react-icons/im";
 const Items = () => {
   return (
     <aside className="items">
-      <div className="item">
+      <div className="item flex">
         <img src="" alt="" />
         <h6>Eames Daw</h6>
         <div className="buttons-div">

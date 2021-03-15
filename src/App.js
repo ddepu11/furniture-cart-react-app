@@ -4,15 +4,15 @@ import Summary from "./Components/Summary";
 
 function App() {
   return (
-    <div className="container">
-      <h3 className="header">
-        Home/<span style={{ color: "pink" }}>Cart</span>
-      </h3>
+    <div className="container grid">
+      <header className="header">
+        <h3>
+          Home/<span>Cart</span>
+        </h3>
+      </header>
 
-      {/* Cart Items */}
       <Items />
 
-      {/* Summary */}
       <Summary />
 
       <footer className="footer">
