@@ -9,9 +9,53 @@ const Items = () => {
         <img src={ch} alt="" />
         <h6>Eames Daw</h6>
         <div className="buttons-div flex">
-          <FaPlus className="plus pointer" />
-          <span>24</span>
           <FaMinus className="minus pointer" />
+          <span>24</span>
+          <FaPlus className="plus pointer" />
+        </div>
+        <span>$24.3</span>
+        <ImBin className="bin pointer" />
+      </div>
+      <div className="item flex">
+        <img src={ch} alt="" />
+        <h6>Eames Daw</h6>
+        <div className="buttons-div flex">
+          <FaMinus className="minus pointer" />
+          <span>24</span>
+          <FaPlus className="plus pointer" />
+        </div>
+        <span>$24.3</span>
+        <ImBin className="bin pointer" />
+      </div>
+      <div className="item flex">
+        <img src={ch} alt="" />
+        <h6>Eames Daw</h6>
+        <div className="buttons-div flex">
+          <FaMinus className="minus pointer" />
+          <span>24</span>
+          <FaPlus className="plus pointer" />
+        </div>
+        <span>$24.3</span>
+        <ImBin className="bin pointer" />
+      </div>
+      <div className="item flex">
+        <img src={ch} alt="" />
+        <h6>Eames Daw</h6>
+        <div className="buttons-div flex">
+          <FaMinus className="minus pointer" />
+          <span>24</span>
+          <FaPlus className="plus pointer" />
+        </div>
+        <span>$24.3</span>
+        <ImBin className="bin pointer" />
+      </div>
+      <div className="item flex">
+        <img src={ch} alt="" />
+        <h6>Eames Daw</h6>
+        <div className="buttons-div flex">
+          <FaMinus className="minus pointer" />
+          <span>24</span>
+          <FaPlus className="plus pointer" />
         </div>
         <span>$24.3</span>
         <ImBin className="bin pointer" />
