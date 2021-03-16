@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="container grid">
       <header className="header flex">
-        <h3>
+        <h3 >
           Home/<span>Cart</span>
         </h3>
 

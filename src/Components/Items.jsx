@@ -14,7 +14,7 @@ const Items = () => {
   return (
     <aside className="items">
       {loading ? (
-        <h1>Loading...</h1>
+        <h1 className="l">Loading...</h1>
       ) : cart.length === 0 ? (
         <div className="msg">
           <h2>Your Cart is Empty!</h2>

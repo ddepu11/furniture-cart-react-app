@@ -6,7 +6,7 @@ const Summary = () => {
   return (
     <section className="summary">
       {loading ? (
-        <h1>Loading...</h1>
+        <h1 className="l">Loading...</h1>
       ) : (
         <>
           <h4>Summary</h4>
