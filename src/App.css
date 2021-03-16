@@ -134,7 +134,12 @@ input:focus {
 
 /* Items Style */
 .item {
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+  grid-auto-rows: minmax(80px, auto);
+  column-gap: 20px;
+  /* justify-items: self-start; */
+  align-items: center;
   padding: 10px 0 15px;
   border-top: 1px solid #cecece;
 }
@@ -152,11 +157,20 @@ input:focus {
   font-size: 0.9em;
   letter-spacing: 1px;
   font-weight: 400;
+  justify-self: flex-start;
+  align-self: center;
+}
+.item span {
+  justify-self: flex-end;
 }
 
+.item .bin {
+  justify-self: flex-end;
+}
 .buttons-div {
   justify-content: space-between;
   width: 80px;
+  justify-self: flex-end;
 }
 
 .buttons-div span {

@@ -24,7 +24,7 @@ const Items = () => {
         cart.map((item) => {
           const { id, title, imgSrc, price, howMany } = item;
           return (
-            <div key={id} className="item flex">
+            <div key={id} className="item">
               <img src={imgSrc} alt={title} />
               <h6>{title}</h6>
 
