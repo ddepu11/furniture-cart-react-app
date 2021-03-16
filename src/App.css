@@ -79,17 +79,20 @@ input:focus {
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(50px, 100px);
   grid-template-areas:
     "h h h h"
-    "h h h h"
+    "i i s s"
     "i i s s"
     "i i s s"
     "f f f f";
+  gap: 20px;
 }
 
 .header {
   font-size: 1.5em;
   grid-area: h;
+  border: 1px solid black;
 }
 
 .header > span {
@@ -98,15 +101,18 @@ input:focus {
 
 .items {
   grid-area: i;
+  border: 1px solid yellow;
 }
 
 .summary {
   grid-area: s;
+  border: 1px solid red;
 }
 
 .footer {
   grid-area: f;
-  justify-content: flex-end !important;
+  border: 1px solid red;
+  justify-content: flex-end;
 }
 
 .item {

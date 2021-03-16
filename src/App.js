@@ -15,7 +15,7 @@ function App() {
 
       <Summary />
 
-      <footer className="footer">
+      <footer className="footer flex">
         <button>Checkout Items</button>
       </footer>
     </div>
