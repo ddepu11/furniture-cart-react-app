@@ -80,7 +80,7 @@ input:focus {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 40px 40px;
+  padding: 10px 40px 20px;
   background: #f1efef;
   color: var(--text-clr);
 }
@@ -93,7 +93,8 @@ input:focus {
     "h h h"
     "i i s"
     "i i ."
-    "i i .";
+    "i i ."
+    "f f f ";
   column-gap: 50px;
 }
 
@@ -125,6 +126,10 @@ input:focus {
 
 .summary {
   grid-area: s;
+}
+
+.footer {
+  grid-area: f;
 }
 
 /* Items Style */
@@ -179,6 +184,10 @@ input:focus {
   margin-bottom: 30px;
 }
 
+.bin {
+  color: var(--primary);
+}
+
 .order-total,
 .shiping,
 .subtotal {
@@ -193,8 +202,9 @@ input:focus {
   font-weight: bold;
 }
 
-/* Check out Button */
-.summary button {
+/* Check outand clear Button */
+.summary button,
+.footer button {
   font-size: 1.1em;
   text-transform: uppercase;
   background: var(--primary);
@@ -206,6 +216,22 @@ input:focus {
   margin-top: 30px;
 }
 
-.summary button:hover {
+.summary button:hover,
+footer button:hover {
   transform: scale(1.05) translateY(-3px);
+}
+.footer button {
+  width: 20%;
+}
+
+.footer {
+  padding: 10px;
+}
+
+.msg {
+  margin-top: 150px;
+  text-align: center;
+}
+.msg h2 {
+  margin-bottom: 20px;
 }

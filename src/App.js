@@ -5,7 +5,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { useGlobalContext } from "./context";
 
 function App() {
-  const { noOfItems } = useGlobalContext();
+  const { noOfItems, loading, clearAll, cart } = useGlobalContext();
 
   return (
     <div className="container grid">
@@ -24,7 +24,14 @@ function App() {
 
       <Summary />
 
-      <footer className="footer"></footer>
+      <footer className="footer flex">
+        {loading == false &&
+          (cart.length === 0 ? (
+            ""
+          ) : (
+            <button onClick={clearAll}>Clear All</button>
+          ))}
+      </footer>
     </div>
   );
 }

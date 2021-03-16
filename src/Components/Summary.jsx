@@ -2,6 +2,7 @@ import { useGlobalContext } from "../context";
 
 const Summary = () => {
   const { loading, orderTotal } = useGlobalContext();
+  const shipCh = 200;
   return (
     <section className="summary">
       {loading ? (
@@ -16,12 +17,12 @@ const Summary = () => {
             </div>
             <div className="shiping flex">
               <p>Shipping</p>
-              <span>$210</span>
+              <span>&#8377;{orderTotal === 0 ? `0` : shipCh}</span>
             </div>
 
             <div className="subtotal flex">
               <p>Subtotal</p>
-              <span>&#8377;{orderTotal + 210}</span>
+              <span>&#8377;{orderTotal === 0 ? `0` : orderTotal + shipCh}</span>
             </div>
             <button>Checkout Items</button>
           </div>

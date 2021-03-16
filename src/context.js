@@ -68,6 +68,11 @@ const AppProvider = ({ children }) => {
     dispatch({ type: "DEC_COUNT", payload: newCart });
   };
 
+  // Clear Cart
+  const clearAll = () => {
+    dispatch({ type: "CLEAR_ALL" });
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -78,6 +83,7 @@ const AppProvider = ({ children }) => {
         removeCartItem,
         noOfItems: state.noOfItems,
         orderTotal: state.orderTotal,
+        clearAll,
       }}
     >
       {children}

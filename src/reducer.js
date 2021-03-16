@@ -57,6 +57,13 @@ const reducer = (state, action) => {
         noOfItems,
         orderTotal,
       };
+      break;
+    case "CLEAR_ALL":
+      return {
+        ...state,
+        cart: [],
+      };
+      break;
   }
 };
 export default reducer;
