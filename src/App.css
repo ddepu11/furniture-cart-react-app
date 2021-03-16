@@ -51,7 +51,7 @@ body {
     #aafb5f
   );
   color: white;
-  padding: 100px 30px;
+  padding: 10px 30px;
 }
 
 a {
@@ -80,7 +80,7 @@ input:focus {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 40px 40px;
+  padding: 10px 40px 40px;
   background: #f1efef;
   color: var(--text-clr);
 }
@@ -96,15 +96,25 @@ input:focus {
     "i i .";
   column-gap: 50px;
 }
+
 /* Header Styles */
 .header {
   font-size: 1.2em;
   grid-area: h;
   letter-spacing: 2px;
-  padding: 20px 5px;
+  padding: 15px 5px;
   margin-bottom: 20px;
+  justify-content: space-between;
 }
 
+.s-cart {
+  font-size: 2em;
+  color: var(--primary);
+}
+.h-right {
+  width: 80px;
+  justify-content: space-between;
+}
 .header h3 > span {
   color: var(--primary);
 }
@@ -120,7 +130,7 @@ input:focus {
 /* Items Style */
 .item {
   justify-content: space-between;
-  padding: 20px 0 20px;
+  padding: 10px 0 15px;
   border-top: 1px solid #cecece;
 }
 .items div:last-child {
@@ -131,11 +141,11 @@ input:focus {
   width: 80px;
   height: 75px;
   object-fit: cover;
-  border: 1px solid #cecece;
+  border-radius: 20px;
 }
 .item h6 {
-  font-size: 1em;
-  letter-spacing: 2px;
+  font-size: 0.9em;
+  letter-spacing: 1px;
   font-weight: 400;
 }
 

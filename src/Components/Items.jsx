@@ -9,6 +9,7 @@ const Items = () => {
     loading,
     increaseHowMany,
     decreaseHowMany,
+    removeCartItem,
   } = useGlobalContext();
   return (
     <aside className="items">
@@ -36,7 +37,10 @@ const Items = () => {
                 />
               </div>
               <span>&#8377;{price}</span>
-              <ImBin className="bin pointer" />
+              <ImBin
+                className="bin pointer"
+                onClick={() => removeCartItem(id)}
+              />
             </div>
           );
         })

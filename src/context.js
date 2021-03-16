@@ -6,14 +6,20 @@ const AppContext = createContext();
 const initialState = {
   cart: [],
   loading: true,
+  noOfItems: 0,
+  orderTotal: 0,
 };
 
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  // Fething cart Data from API Furniture Cart API
+  // API is deployed in Heroku
   const fetchCart = async () => {
     try {
-      const res = await fetch("http://localhost:5000/");
+      const res = await fetch(
+        "https://furniture-cart-react-app.herokuapp.com/"
+      );
       const { ok, cart } = await res.json();
 
       dispatch({ type: "SET_CART", payload: cart });
@@ -22,9 +28,19 @@ const AppProvider = ({ children }) => {
     }
   };
 
+  const removeCartItem = (id) => {
+    // If returns false then remove that item
+    const newCart = state.cart.filter((item) => item.id !== id);
+    dispatch({ type: "REMOVE_CART_ITEM", payload: newCart });
+  };
+
   useEffect(() => {
     fetchCart();
   }, []);
+
+  useEffect(() => {
+    dispatch({ type: "COUNT_ITEMS" });
+  }, [state.cart]);
 
   const increaseHowMany = (id) => {
     const newCart = state.cart.map((item) => {
@@ -38,7 +54,7 @@ const AppProvider = ({ children }) => {
     dispatch({ type: "INC_COUNT", payload: newCart });
   };
   const decreaseHowMany = (id) => {
-    const newCart = state.cart.map((item) => {
+    let newCart = state.cart.map((item) => {
       if (item.id === id) {
         if (item.howMany !== 0) {
           item.howMany--;
@@ -59,6 +75,9 @@ const AppProvider = ({ children }) => {
         loading: state.loading,
         increaseHowMany,
         decreaseHowMany,
+        removeCartItem,
+        noOfItems: state.noOfItems,
+        orderTotal: state.orderTotal,
       }}
     >
       {children}

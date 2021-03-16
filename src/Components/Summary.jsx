@@ -1,7 +1,7 @@
 import { useGlobalContext } from "../context";
 
 const Summary = () => {
-  const { loading } = useGlobalContext();
+  const { loading, orderTotal } = useGlobalContext();
   return (
     <section className="summary">
       {loading ? (
@@ -12,7 +12,7 @@ const Summary = () => {
           <div className="details">
             <div className="order-total flex">
               <p>Order total</p>
-              <span>$544</span>
+              <span>&#8377;{orderTotal}</span>
             </div>
             <div className="shiping flex">
               <p>Shipping</p>
@@ -21,7 +21,7 @@ const Summary = () => {
 
             <div className="subtotal flex">
               <p>Subtotal</p>
-              <span>$1599.25</span>
+              <span>&#8377;{orderTotal + 210}</span>
             </div>
             <button>Checkout Items</button>
           </div>
