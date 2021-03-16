@@ -140,7 +140,7 @@ input:focus {
   column-gap: 20px;
   /* justify-items: self-start; */
   align-items: center;
-  padding: 10px 0 15px;
+  padding: 5px 0 10px;
   border-top: 1px solid #cecece;
 }
 .items div:last-child {
@@ -152,6 +152,10 @@ input:focus {
   height: 75px;
   object-fit: cover;
   border-radius: 20px;
+  transition: all 0.25s ease-in-out;
+}
+.item img:hover {
+  transform: scale(5) translateX(30px);
 }
 .item h6 {
   font-size: 0.9em;
