@@ -32,8 +32,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
 body {
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(
     to right top,
     #c472a0,
@@ -58,6 +59,7 @@ a {
   text-decoration: none;
   color: white;
 }
+
 ul {
   list-style-type: none;
 }
@@ -127,27 +129,31 @@ input:focus {
 
 .item img {
   width: 80px;
-  height: 80px;
+  height: 75px;
   object-fit: cover;
-  border: 1px solid #999;
+  border: 1px solid #cecece;
 }
 .item h6 {
   font-size: 1em;
   letter-spacing: 2px;
   font-weight: 400;
 }
+
 .buttons-div {
   justify-content: space-between;
   width: 80px;
 }
+
 .buttons-div span {
   border: 1px solid #999;
   padding: 5px;
   border-radius: 8px;
 }
+
 .pointer {
   cursor: pointer;
   font-size: 0.8em;
+  color: var(--text-clr);
 }
 
 /* Summary Style */
@@ -162,6 +168,7 @@ input:focus {
   letter-spacing: 2px;
   margin-bottom: 30px;
 }
+
 .order-total,
 .shiping,
 .subtotal {
@@ -171,6 +178,12 @@ input:focus {
   letter-spacing: 1px;
 }
 
+.subtotal > span {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* Check out Button */
 .summary button {
   font-size: 1.1em;
   text-transform: uppercase;
@@ -182,6 +195,7 @@ input:focus {
   width: 100%;
   margin-top: 30px;
 }
+
 .summary button:hover {
   transform: scale(1.05) translateY(-3px);
 }

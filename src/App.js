@@ -1,8 +1,12 @@
 import "./App.css";
 import Items from "./Components/Items";
 import Summary from "./Components/Summary";
+import { useGlobalContext } from "./context";
 
 function App() {
+  const { name } = useGlobalContext();
+
+  console.log(name);
   return (
     <div className="container grid">
       <header className="header">
@@ -15,9 +19,7 @@ function App() {
 
       <Summary />
 
-      <footer className="footer">
-        
-      </footer>
+      <footer className="footer"></footer>
     </div>
   );
 }
