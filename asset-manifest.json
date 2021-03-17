@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/furniture-cart-react-app/static/css/main.87817079.chunk.css",
+    "main.css": "/furniture-cart-react-app/static/css/main.fd94a8dc.chunk.css",
     "main.js": "/furniture-cart-react-app/static/js/main.d627635f.chunk.js",
     "main.js.map": "/furniture-cart-react-app/static/js/main.d627635f.chunk.js.map",
     "runtime-main.js": "/furniture-cart-react-app/static/js/runtime-main.f42e8ca3.js",
@@ -8,14 +8,14 @@
     "static/js/2.18fc8ff1.chunk.js": "/furniture-cart-react-app/static/js/2.18fc8ff1.chunk.js",
     "static/js/2.18fc8ff1.chunk.js.map": "/furniture-cart-react-app/static/js/2.18fc8ff1.chunk.js.map",
     "index.html": "/furniture-cart-react-app/index.html",
-    "static/css/main.87817079.chunk.css.map": "/furniture-cart-react-app/static/css/main.87817079.chunk.css.map",
+    "static/css/main.fd94a8dc.chunk.css.map": "/furniture-cart-react-app/static/css/main.fd94a8dc.chunk.css.map",
     "static/js/2.18fc8ff1.chunk.js.LICENSE.txt": "/furniture-cart-react-app/static/js/2.18fc8ff1.chunk.js.LICENSE.txt",
     "static/media/ch.05524d83.jpg": "/furniture-cart-react-app/static/media/ch.05524d83.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f42e8ca3.js",
     "static/js/2.18fc8ff1.chunk.js",
-    "static/css/main.87817079.chunk.css",
+    "static/css/main.fd94a8dc.chunk.css",
     "static/js/main.d627635f.chunk.js"
   ]
 }
